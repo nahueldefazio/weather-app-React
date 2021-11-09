@@ -17,7 +17,7 @@ function ManualGeoScreen() {
 
     return (
         <div>
-            <Link to={"/"}  className={'btn btn-success m-2'}>
+            <Link to={"/weather-app-React/"}  className={'btn btn-success m-2'}>
                 Back
             </Link>
             <Formik initialValues={{

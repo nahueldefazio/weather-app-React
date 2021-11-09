@@ -14,10 +14,10 @@ function HomeScreen() {
                      className="rounded-circle gif my-3"/>
 
 
-            <Link to={'/auto-zone'} className={'btn btn-danger w-50 my-4'}>
+            <Link to={'/weather-app-React/auto-zone'} className={'btn btn-danger w-50 my-4'}>
                 Auto-Detection Zone
             </Link>
-            <Link to={'manual-zone'} className={'btn btn-info w-50'} onClick={setWeather(null)}>
+            <Link to={'/weather-app-React/manual-zone'} className={'btn btn-info w-50'} onClick={setWeather(null)}>
                 Manual-Detection Zone
             </Link>
         </div>

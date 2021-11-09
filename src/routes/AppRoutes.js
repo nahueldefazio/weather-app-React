@@ -12,9 +12,9 @@ function AppRoutes() {
     return (
         <BrowserRouter>
             <Switch>
-                <Route path={'/'} exact component={HomeScreen}/>
-                <Route path={'/auto-zone'} exact component={AutoGeoScreen}/>
-                <Route path={'/manual-zone'} exact component={ManualGeoScreen}/>
+                <Route path={'/weather-app-React/'} exact component={HomeScreen}/>
+                <Route path={'/weather-app-React/auto-zone'} exact component={AutoGeoScreen}/>
+                <Route path={'/weather-app-React/manual-zone'} exact component={ManualGeoScreen}/>
             </Switch>
         </BrowserRouter>
     );

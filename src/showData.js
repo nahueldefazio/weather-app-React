@@ -23,7 +23,7 @@ function ShowData() {
                     <h1>Temp. Max: {weather.main.temp_max}°</h1>
                     <h1>Humedad: {weather.main.humidity}%</h1>
                 </div>
-                <Link to={'/'} className={'btn btn-warning'}>
+                <Link to={'/weather-app-React/'} className={'btn btn-warning'}>
                     Menu
                 </Link>
             </>
