@@ -5,6 +5,7 @@ import WeatherContext from "../context/weatherContext";
 import {Spinner} from "react-bootstrap";
 import ShowData from "../showData";
 import {Link} from "react-router-dom";
+import video1 from "../assets/production ID_5155396 (1).mp4";
 
 function ManualGeoScreen() {
 
@@ -17,6 +18,16 @@ function ManualGeoScreen() {
 
     return (
         <div>
+            <video autoPlay loop muted
+                   style={{
+                       position: "absolute",
+                       width: "100%",
+                       height: "100%",
+                       objectFit: "cover",
+                       zIndex: "-1"
+                   }}>
+                <source src={video1}/>
+            </video>
             <Link to={"/weather-app-React/"}  className={'btn btn-success m-2'}>
                 Back
             </Link>

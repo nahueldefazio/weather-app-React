@@ -1,5 +1,29 @@
+.center{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
 .gif{
     width: 40%;
+}
+
+#root{
+    color: white;
+}
+
+.background{
+    color: white;
+    background-size: cover;
+    background-blend-mode: darken;
+    background: black;
+    opacity: 0.8;
+    display: flex;
+    flex-direction: column;
+    width: 60% ;
+    margin: auto;
+    padding: 2rem;
+
 }
 
 .error{
@@ -14,5 +38,11 @@
 @media screen and (max-width: 350px){
     .gif{
         width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .btn-menu{
+        width: 100%
     }
 }

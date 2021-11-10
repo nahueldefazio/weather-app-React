@@ -4,6 +4,7 @@ import ShowData from "../showData";
 import {Button, Spinner} from "react-bootstrap";
 import WeatherContext from "../context/weatherContext";
 import {Link} from "react-router-dom";
+import video1 from "../assets/production ID_5155396 (1).mp4";
 
 function AutoGeoScreen(props) {
     const [status, setStatus] = useState("");
@@ -36,15 +37,34 @@ function AutoGeoScreen(props) {
 
     if (status === "OK") {
         return (
-            <>
+            <div>
+                <video autoPlay loop muted
+                       style={{
+                           position: "absolute",
+                           width: "100%",
+                           height: "100%",
+                           objectFit: "cover",
+                           zIndex: "-1"
+                       }}>
+                    <source src={video1}/>
+                </video>
                 <ShowData/>
-
-            </>
+            </div>
         );
     } else {
         return (
-            <>
-                <Button variant="primary" disabled className={'d-block m-auto mt-5'}>
+            <div>
+                <video autoPlay loop muted
+                       style={{
+                           position: "absolute",
+                           width: "100%",
+                           height: "100%",
+                           objectFit: "cover",
+                           zIndex: "-1"
+                       }}>
+                    <source src={video1}/>
+                </video>
+                <Button variant="primary" disabled className={'d-block m-auto mt-5 center'}>
                     <Spinner
                         as="span"
                         animation="grow"
@@ -55,7 +75,7 @@ function AutoGeoScreen(props) {
                     Loading...
                 </Button>
 
-            </>
+            </div>
 
 
         )
